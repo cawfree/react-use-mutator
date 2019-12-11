@@ -1,0 +1,38 @@
+{
+  "name": "react-use-mutator",
+  "version": "0.0.1",
+  "description": "A React hook for inspecting and mutating shared state without subscribing to render updates.",
+  "repository": "https://github.com/cawfree/react-use-mutator",
+  "author": "Alex Thomas (@cawfree) <hello@cawfree.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "./node_modules/.bin/babel ./index.js --out-file ./dist/index.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run-script build"
+    }
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "hooks",
+    "use",
+    "state",
+    "shared",
+    "sync",
+    "mutate"
+  ],
+  "main": "dist/index.js",
+  "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "husky": "^3.1.0",
+    "lodash": "^4.17.15",
+    "react": "^16.12.0"
+  }
+}
